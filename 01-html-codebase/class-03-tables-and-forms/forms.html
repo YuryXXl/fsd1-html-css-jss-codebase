@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables and Forms</title>
+</head>
+<body>
+  <!-- forms are used to collect the data from user.
+  e.g: registartion, login, payment etc...  -->
+  <!-- to define a form we begin with form tag -->
+  <form action="#">
+    <label for="firstname">First Name:</label><br>
+    <input type="text" id="firstname"><br>
+    <!-- inside of the form we will create inputs with input tag -->
+    <br>
+    <label for="lastname">Last Name: </label> <br>
+    <input type="text" id="lastname"><br>
+    <br>
+    <!-- lets create a larger input for messages that have multiple characters -->
+    <label for="message">Type message here:</label> <br>
+    <!-- for textarea we need to use textarea tag instead of input -->
+    <textarea id="message" cols="20" rows="1"></textarea><br>
+    <br>
+    <!-- we can use input type email to expect an email and do validations -->
+    <label for="email">Email: </label><br>
+    <!-- email type validates that the input has an @ in the value provided -->
+    <input type="email" id="email"><br>
+    <br>
+    <!-- we dont want to expose the password of the users that they type -->
+    <label for="password">Password: </label><br>
+    <!-- the password type will hide the characters under dots for security reasons -->
+    <input type="password" id="password"><br>
+    <br>
+    <!-- submit button will send the data to the server for processing -->
+    <input type="submit">
+    <!-- reset button will clean up everything in scope of the form(all inputs included in the form) -->
+    <input type="reset">
+  </form>
+</body>
+</html>
